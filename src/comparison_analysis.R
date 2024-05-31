@@ -25,7 +25,7 @@ library(TOSTER)
 
 
 # Reading dataset
-df_main_num <- read.csv("C:/Users/NITRO/Desktop/2023-24a-fai2-adsai-SimonaDimitrova222667/scripts/survey_num_27_10.csv",header = TRUE,sep = ",")
+df_main_num <- read.csv(file.path(getwd(), "scripts/survey_num_27_10.csv"), header = TRUE,sep = ",")
 df_main_num[df_main_num == ""] <- NA
 
 # Aggregating facility data
