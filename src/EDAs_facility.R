@@ -18,8 +18,8 @@ library(car)
 library(cowplot)
 
 
-df_general_num <- read.csv("C:/Users/NITRO/Desktop/2023-24a-fai2-adsai-SimonaDimitrova222667/scripts/survey_num_27_10.csv",header = TRUE,sep = ",")
-df_general_text <- read.csv("C:/Users/NITRO/Desktop/2023-24a-fai2-adsai-SimonaDimitrova222667/scripts/survey_text_27_10.csv",header = TRUE,sep = ",")
+df_general_num <- read.csv(file.path(getwd(), "data", "survey_num_27_10.csv"),header = TRUE,sep = ",")
+df_general_text <- read.csv(file.path(getwd(), "data", "survey_text_27_10.csv"),header = TRUE,sep = ",")
 
 df_general_text <- df_general_text %>%
   slice(-1:-2) %>%

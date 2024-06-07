@@ -24,7 +24,7 @@ library(shiny)
 
 
 # reading numerical
-df_main_num <- read.csv("C:/Users/NITRO/Desktop/2023-24a-fai2-adsai-SimonaDimitrova222667/scripts/survey_num_27_10.csv",header = TRUE,sep = ",")
+df_main_num <- read.csv(file.path(getwd(), "data", "survey_num_27_10.csv"),header = TRUE,sep = ",")
 #mapping the missing values with Na
 df_main_num[df_main_num == ""] <- NA
 

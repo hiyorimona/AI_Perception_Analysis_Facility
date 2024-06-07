@@ -8,10 +8,10 @@ library(viridis)
 
 
 
-df_main <- read.csv("C:/Users/NITRO/Desktop/2023-24a-fai2-adsai-SimonaDimitrova222667/scripts/survey_text_27_10.csv",header = TRUE,sep = ",")
+df_main <- read.csv(file.path(getwd(), "data", "survey_text_27_10.csv"),header = TRUE,sep = ",")
 df_main[df_main == ""] <- NA
 x_order <- c("Strongly agree", "Somewhat agree", "Neither agree nor disagree","Somewhat disagree","Strongly disagree")  
-df_num <- read.csv("C:/Users/NITRO/Desktop/2023-24a-fai2-adsai-SimonaDimitrova222667/scripts/survey_num_27_10.csv",header = TRUE,sep = ",")
+df_num <- read.csv(file.path(getwd(), "data", "survey_num_27_10.csv"),header = TRUE,sep = ",")
 
 df_domain_par <- df_main %>%
   slice(-1:-2) %>%
