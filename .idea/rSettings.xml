@@ -2,5 +2,6 @@
 <project version="4">
   <component name="RSettings">
     <option name="interpreterPath" value="D:\Program Files\R\R-4.3.1\bin\R.exe" />
+    <option name="loadWorkspace" value="true" />
   </component>
 </project>
